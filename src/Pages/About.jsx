@@ -10,6 +10,7 @@ function About() {
       </div>
       <div className="my-10 flex flex-col gap-12 md:flex-row">
         <img
+          loading="lazy"
           className="w-full md:max-w-[360px]"
           src={assets.about_image}
           alt=""

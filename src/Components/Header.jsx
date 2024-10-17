@@ -9,7 +9,12 @@ function Header() {
           Book Appointment <br /> With Trusted Doctors
         </p>
         <div className="fex-col flex items-center gap-3 text-sm font-light text-white md:flex-row">
-          <img className="w-28" src={assets.group_profiles} alt="" />
+          <img
+            loading="lazy"
+            className="w-28"
+            src={assets.group_profiles}
+            alt=""
+          />
           <p>
             Simply browse through our extensive list of trusted doctors,
             <br className="hidden sm:block" />
@@ -21,12 +26,13 @@ function Header() {
           className="mx-auto flex items-center gap-2 rounded-full bg-white px-8 py-3 text-sm text-gray-600 transition-all duration-300 hover:scale-105 md:m-0"
         >
           Book appointment
-          <img className="w-3" src={assets.arrow_icon} alt="" />
+          <img loading="lazy" className="w-3" src={assets.arrow_icon} alt="" />
         </a>
       </div>
       {/* Right Side */}
       <div className="relative md:w-1/2">
         <img
+          loading="lazy"
           className="bottom-0 h-auto w-full rounded-lg md:absolute"
           src={assets.header_img}
           alt=""

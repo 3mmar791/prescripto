@@ -89,6 +89,7 @@ function Appointment() {
         <div className="flex flex-col gap-4 sm:flex-row">
           <div>
             <img
+              loading="lazy"
               className="w-full rounded-lg bg-primary sm:max-w-72"
               src={docInfo.image}
               alt=""
@@ -98,7 +99,12 @@ function Appointment() {
             {/* Doc Info : name , degree , experience */}
             <p className="flex items-center gap-2 text-2xl font-medium text-gray-900">
               {docInfo.name}
-              <img className="w-5" src={assets.verified_icon} alt="" />
+              <img
+                loading="lazy"
+                className="w-5"
+                src={assets.verified_icon}
+                alt=""
+              />
             </p>
             <div className="mt-1 flex items-center gap-2 text-sm text-gray-600">
               <p>
@@ -111,7 +117,7 @@ function Appointment() {
             {/* Doctor About */}
             <div>
               <p className="mt-3 flex items-center gap-1 text-sm font-medium">
-                About <img src={assets.info_icon} alt="" />
+                About <img loading="lazy" src={assets.info_icon} alt="" />
               </p>
               <p className="mt-1 max-w-[700px] text-sm text-gray-500">
                 {docInfo.about}

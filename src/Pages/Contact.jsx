@@ -10,6 +10,7 @@ function Contact() {
       </div>
       <div className="my-10 mb-28 flex flex-col justify-center gap-10 text-sm md:flex-row">
         <img
+          loading="lazy"
           className="w-full max-w-[360px]"
           src={assets.contact_image}
           alt=""

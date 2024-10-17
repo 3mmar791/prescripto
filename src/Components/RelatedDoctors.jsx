@@ -32,7 +32,12 @@ function RelatedDoctors({ speciality, docId }) {
               key={index}
               className="cursor-pointer overflow-hidden rounded-xl border border-blue-200 transition-all duration-500 hover:translate-y-[-10px]"
             >
-              <img className="bg-blue-50" src={item.image} alt="" />
+              <img
+                loading="lazy"
+                className="bg-blue-50"
+                src={item.image}
+                alt=""
+              />
               <div className="p-4">
                 <div className="flex items-center gap-2 text-center text-sm text-green-500">
                   <p className="h-2 w-2 rounded-full bg-green-500"></p>

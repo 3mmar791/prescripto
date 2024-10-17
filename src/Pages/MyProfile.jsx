@@ -16,7 +16,12 @@ function MyProfile() {
   const [isEdit, setIsEdit] = useState(false);
   return (
     <div className="flex max-w-lg flex-col gap-2 text-sm">
-      <img className="w-36 rounded" src={userData.Image} alt="" />
+      <img
+        loading="lazy"
+        className="w-36 rounded"
+        src={userData.Image}
+        alt=""
+      />
       {isEdit ? (
         <input
           className="tect-3xl mt-4 max-w-60 bg-gray-50 font-medium"

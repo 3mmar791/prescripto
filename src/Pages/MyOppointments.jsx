@@ -15,7 +15,12 @@ function MyOppointments() {
               key={index}
               className="grid grid-cols-[1fr_2fr] gap-4 border-b py-2 sm:flex sm:gap-6"
             >
-              <img className="w-32 bg-indigo-50" src={item.image} alt="" />
+              <img
+                loading="lazy"
+                className="w-32 bg-indigo-50"
+                src={item.image}
+                alt=""
+              />
               <div className="flex-1 text-sm text-gray-600">
                 <p className="font-semibold text-neutral-800">{item.name}</p>
                 <p className="mt-1 font-medium text-zinc-700">

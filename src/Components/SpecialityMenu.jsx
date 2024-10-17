@@ -23,7 +23,12 @@ function SpecialityMenu() {
               key={index}
               to={`/doctors/${item.speciality}`}
             >
-              <img className="mb-2 w-16 sm:w-24" src={item.image} alt="" />
+              <img
+                loading="lazy"
+                className="mb-2 w-16 sm:w-24"
+                src={item.image}
+                alt=""
+              />
               <p>{item.speciality}</p>
             </Link>
           );

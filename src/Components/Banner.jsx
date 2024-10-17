@@ -25,6 +25,7 @@ function Banner() {
       {/* --------------- Right Side --------------- */}
       <div className="relative hidden md:block md:w-1/2 lg:w-[370px]">
         <img
+          loading="lazy"
           className="absolute bottom-0 w-full max-w-md ring-0"
           src={assets.appointment_img}
           alt=""

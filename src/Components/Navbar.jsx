@@ -8,6 +8,7 @@ function Navbar() {
   return (
     <div className="mb-5 flex items-center justify-between border-b border-b-gray-400 py-4 text-sm">
       <img
+        loading="lazy"
         onClick={() => navigat("/")}
         className="w-44 cursor-pointer"
         src={assets.logo}
@@ -34,8 +35,18 @@ function Navbar() {
       <div className="flex items-center justify-center gap-4">
         {token ? (
           <div className="group relative flex cursor-pointer items-center gap-2">
-            <img className="w-8 rounded-full" src={assets.profile_pic} alt="" />
-            <img className="w-2.5" src={assets.dropdown_icon} alt="" />
+            <img
+              loading="lazy"
+              className="w-8 rounded-full"
+              src={assets.profile_pic}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              className="w-2.5"
+              src={assets.dropdown_icon}
+              alt=""
+            />
             <div className="absolute right-0 top-0 z-20 hidden pt-14 text-base font-medium text-gray-600 group-hover:block">
               <div className="flex min-w-48 flex-col gap-4 rounded bg-stone-100 p-4">
                 <p
@@ -76,6 +87,7 @@ function Navbar() {
           </button>
         )}
         <img
+          loading="lazy"
           src={assets.menu_icon}
           onClick={() => setShowMenu(true)}
           className="w-6 md:hidden"
@@ -87,8 +99,9 @@ function Navbar() {
         className={` ${showMenu ? "fixed w-full" : "h-0 w-0"} bottom-0 right-0 top-0 z-20 overflow-hidden bg-white transition-all md:hidden`}
       >
         <div className="flex items-center justify-between px-5 py-6">
-          <img className="w-36" src={assets.logo} alt="" />
+          <img loading="lazy" className="w-36" src={assets.logo} alt="" />
           <img
+            loading="lazy"
             className="w-7"
             onClick={() => setShowMenu(false)}
             src={assets.cross_icon}
